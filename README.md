@@ -1,5 +1,35 @@
 # Setting up the environment
 
+## Git and GitHub
+
+Having a GitHub account is required but not enough to make sure you can keep a up-to-date copy of the repository on you computer.
+You Git as well, however, there's a good chance you already have it. 
+Run following command in your terminal to check:
+
+```bash
+# If you're on macOS, this command will also install git if you don't have it yet
+git --version
+```
+If you see a version number, you can skip the next step.
+If not, you can install Git by following the instructions on the [official website](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
+
+### How to use git and GitHub
+
+There are many guides around interacting with Git; here, we will focus on the simplest option for people not faimilar with the command line.
+You can download and install the [GitHub Desktop](https://desktop.github.com/) application.
+This application will let you copy the repository to your system and keep it up to date with a few clicks.
+Log in with your GitHub account and clone the repository to your computer following the [official instructions](https://docs.github.com/en/desktop/adding-and-cloning-repositories/cloning-a-repository-from-github-to-github-desktop).
+
+ - **Confirming you're up to date:** After cloning the repository, you can now access changes made by others, as well as pushing your own changes to the repository.
+The app will often notify you when there are changes made to the repository and you don't have the latest version. 
+The right corner of the top bar will show a "Fetch origin" button, that button will confirm you're looking at the latest version of the repository.
+
+- **Syncing changes:** When it says "Pull origin" instead, it means there are changes made by others that you don't have yet. Click the button to get the latest version of the repository.
+
+- **Making changes:** After you changed some files and committed them (follow [this guide](https://docs.github.com/en/desktop/making-changes-in-a-branch/committing-and-reviewing-changes-to-your-project-in-github-desktop) to learn how to make commits with the app), the button will say "Push origin" instead. When you click it, your changes will be uploaded to the repository and everyone will have access to them.
+
+There are more to learn and more advanced features, but there's no need to go beyond this for our purposes. 
+
 ## Dependency manager
 
 The repository and dependencies are managed with `uv`, a python environment manager. There are multiple ways to get it working in your computers.
@@ -29,6 +59,15 @@ powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | ie
 ```
 
 ## How to use the environment
+
+### Navigating to the repository folder
+
+You now have access to `uv`, to use it in your terminal, you first need to navigate to the repository folder.
+This can be done with the `cd` (`c`hange `d`irectory) and `ls` (`l`i`s`t) commands.
+`ls` will list the available files and folders inside the current folder, and `cd path/to/folder` will change the terminal's working directory to the specified folder.
+For VSCode users, the GitHub desktop app will let you open the repository in VSCode, any terminal opened in VSCode afterwards will already be in the correct folder.
+
+### Activating the environment
 
 After installing `uv`, packages already added to the environment and pushed to the repository (by anyone) can be installed with a single command:
 
