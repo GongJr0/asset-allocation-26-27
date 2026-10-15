@@ -1,6 +1,6 @@
-## Setting up the environment
+# Setting up the environment
 
-### Dependency manager
+## Dependency manager
 
 The repository and dependencies are managed with `uv`, a python environment manager. There are multiple ways to get it working in your computers.
 
@@ -28,7 +28,7 @@ winget install -e --id astral-sh.uv
 powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
 ```
 
-# How to use the environment
+## How to use the environment
 
 After installing `uv`, packages already added to the environment and pushed to the repository (by anyone) can be installed with a single command:
 
@@ -43,7 +43,7 @@ uv add <package-name>
 uv remove <package-name>
 ```
 
-# Setting up jupyter notebooks
+## Setting up jupyter notebooks
 
 The dependencies needed for jupyter notebooks are already in the environment.
 A notebook can be edited and executed with an editor like VSCode, or via a jupyter server in the web browser.
@@ -65,7 +65,7 @@ uv run jupyter notebook
 This will start a server and open a new tab in your browser. To stop the server, go to the terminal you typed the command and press `Ctrl+C` (alternatively close the terminal window). For VSCode, you can install the [Python](https://marketplace.visualstudio.com/items?itemName=donjayamanne.python-extension-pack) and [Jupyter](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter) extension packs through the extension marketplace and edit notebooks in the editor.
 
 
-# Check if you set up the environment correctly
+## Check if you set up the environment correctly
 
 After the following steps, you can use the test notebook and python script to verify that the environment is set up correctly.
 
@@ -88,7 +88,7 @@ source .venv/bin/activate
 This will force `uv` (and your terminal) to use the environment in this repository.
 
 
-# Optional: Add yourself as an author
+## Optional: Add yourself as an author
 
 Open the `pyproject.toml` file and find the `authors` field under the `[project]` section. You can add your information to that list like:
 
