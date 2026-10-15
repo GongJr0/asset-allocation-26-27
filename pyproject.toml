@@ -1,0 +1,23 @@
+[project]
+name = "asset-allocation-26-27"
+version = "0.1.0"
+description = "Repository containing group assignments and the final project for the Asset Allocation and Investment Strategies 26/27 course."
+readme = "README.md"
+authors = [
+    { name = "Ege Güney Kıymaç", email = "e.kiymac@student.uw.edu.pl" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "ipython>=9.17.1",
+    "jupyter>=1.1.1",
+    "jupyterlab>=4.6.4",
+    "matplotlib>=3.11.2",
+    "numpy>=2.5.4",
+    "pandas>=3.0.6",
+    "plotly>=7.1.0",
+    "scikit-learn>=1.9.1",
+    "scipy>=1.18.1",
+    "statsmodels>=0.15.0",
+    "yfinance>=1.7.0",
+]
+
