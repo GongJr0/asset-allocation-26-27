@@ -3,19 +3,19 @@
 ## Git and GitHub
 
 Having a GitHub account is required but not enough to make sure you can keep a up-to-date copy of the repository on you computer.
-You Git as well, however, there's a good chance you already have it. 
+You need Git as well, however, there's a good chance you already have it. 
 Run following command in your terminal to check:
 
 ```bash
 # If you're on macOS, this command will also install git if you don't have it yet
 git --version
 ```
-If you see a version number, you can skip the next step.
+If you see a version number, you have it.
 If not, you can install Git by following the instructions on the [official website](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
 
 ### How to use git and GitHub
 
-There are many guides around interacting with Git; here, we will focus on the simplest option for people not faimilar with the command line.
+There are many guides around interacting with Git; here, we will focus on the simplest option for people not familiar with the command line.
 You can download and install the [GitHub Desktop](https://desktop.github.com/) application.
 This application will let you copy the repository to your system and keep it up to date with a few clicks.
 Log in with your GitHub account and clone the repository to your computer following the [official instructions](https://docs.github.com/en/desktop/adding-and-cloning-repositories/cloning-a-repository-from-github-to-github-desktop).
