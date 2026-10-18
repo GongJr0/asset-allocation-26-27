@@ -1,7 +1,9 @@
 import sys
 from pathlib import Path
+
+
 def main():
-    if  ".venv" in sys.prefix:
+    if ".venv" in sys.prefix:
         expected = (Path.cwd() / ".venv").resolve()
         actual = Path(sys.prefix).resolve()
         if expected == actual:
@@ -16,6 +18,7 @@ def main():
             "Your code ran, but you're not using a virtual environment."
             "Check the README and see if you missed anything."
         )
+
 
 if __name__ == "__main__":
     main()
