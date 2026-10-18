@@ -5,7 +5,7 @@ from pathlib import Path
 import pandas as pd
 import requests
 
-DATA = Path(__file__).parent / "data"  # guard write-at-root
+DATA = Path(__file__).parent.parent / "data" / "task5"  # guard write-at-root
 API = "https://en.wikipedia.org/w/api.php"
 INDEX = "https://en.wikipedia.org/w/index.php"
 HEADERS = {"User-Agent": "WikiRevisionResearch/1.0 (e.kiymac@student.uw.edu.pl)"}

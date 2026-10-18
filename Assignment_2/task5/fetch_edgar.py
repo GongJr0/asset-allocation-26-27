@@ -4,7 +4,7 @@ from pathlib import Path
 import pandas as pd
 import requests
 
-DATA = Path(__file__).parent / "data"
+DATA = Path(__file__).parent.parent / "data" / "task5"
 
 # edgar looks for a name + email in the header.
 HEADERS = {"User-Agent": "Ege Guney Kiymac e.kiymac@student.uw.edu.pl"}
@@ -40,7 +40,6 @@ KEEP = ("start", "end", "val", "filed", "form", "fy", "fp", "accn")
 
 
 def universe_ciks() -> dict[str, str]:
-    """Ticker to zero-padded CIK for every name that was in the sector at any snapshot."""
     if not (DATA / "constituents_pit.csv").exists():
         raise FileNotFoundError(
             f"Run fetch_constituents.py first to get {DATA / 'constituents_pit.csv'}"
