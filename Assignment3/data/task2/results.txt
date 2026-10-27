@@ -1,0 +1,40 @@
+
+=== 2s10s (sample from 1976-06-01) ===
+Inversion episodes: 6 | followed by recession within 24m: 4 | false signals: 2
+Lead time from inversion (true signals): mean 18.2, min 14, max 23 months
+Lead time from un-inversion (true signals): mean -3.8, min -29, max 7 months
+Recessions not preceded by an inversion: [datetime.date(2020, 3, 1)]
+spread inversion_start inversion_end  months_inverted  min_spread next_recession  lead_from_inversion  lead_from_uninversion  true_signal
+ 2s10s      1978-09-01    1982-06-01               46       -2.13     1980-02-01                 17.0                  -29.0         True
+ 2s10s      1989-01-01    1990-03-01               15       -0.32     1990-08-01                 19.0                    4.0         True
+ 2s10s      1998-06-01    1998-06-01                1       -0.02     2001-04-01                 34.0                   33.0        False
+ 2s10s      2000-02-01    2000-12-01               11       -0.41     2001-04-01                 14.0                    3.0         True
+ 2s10s      2006-02-01    2007-05-01               16       -0.14     2008-01-01                 23.0                    7.0         True
+ 2s10s      2022-07-01    2024-08-01               26       -0.93           None                  NaN                    NaN        False
+
+=== 3m10y (sample from 1953-04-01) ===
+Inversion episodes: 8 | followed by recession within 24m: 6 | false signals: 2
+Lead time from inversion (true signals): mean 11.0, min 6, max 17 months
+Lead time from un-inversion (true signals): mean -3.2, min -19, max 8 months
+Recessions not preceded by an inversion: [datetime.date(1957, 9, 1), datetime.date(1960, 5, 1), datetime.date(1990, 8, 1)]
+spread inversion_start inversion_end  months_inverted  min_spread next_recession  lead_from_inversion  lead_from_uninversion  true_signal
+ 3m10y      1966-09-01    1967-01-01                5       -0.34     1970-01-01                 40.0                   35.0        False
+ 3m10y      1969-01-01    1970-01-01               13       -0.29     1970-01-01                 12.0                   -1.0         True
+ 3m10y      1973-06-01    1974-09-01               16       -1.27     1973-12-01                  6.0                  -10.0         True
+ 3m10y      1978-12-01    1981-08-01               33       -2.65     1980-02-01                 14.0                  -19.0         True
+ 3m10y      2000-08-01    2000-12-01                5       -0.53     2001-04-01                  8.0                    3.0         True
+ 3m10y      2006-08-01    2007-04-01                9       -0.38     2008-01-01                 17.0                    8.0         True
+ 3m10y      2019-06-01    2020-02-01                9       -0.32     2020-03-01                  9.0                    0.0         True
+ 3m10y      2022-11-01    2024-11-01               25       -1.57           None                  NaN                    NaN        False
+
+=== Rules on 2s10s: 1976-06-01 to 2026-09-01, hold 18m in T-bills ===
+                    Ann. return  Ann. vol  Sharpe  Max drawdown  % months in bills
+Buy & hold stocks         0.121     0.154   0.553        -0.503              0.000
+Rule A (invert)           0.119     0.136   0.590        -0.503              0.179
+Rule B (un-invert)        0.124     0.133   0.632        -0.299              0.179
+
+=== Rules on 3m10y: 1953-04-01 to 2026-09-01, hold 18m in T-bills ===
+                    Ann. return  Ann. vol  Sharpe  Max drawdown  % months in bills
+Buy & hold stocks         0.113     0.150   0.522        -0.503              0.000
+Rule A (invert)           0.120     0.131   0.626        -0.459              0.163
+Rule B (un-invert)        0.105     0.132   0.516        -0.465              0.163
