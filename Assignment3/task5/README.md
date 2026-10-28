@@ -15,3 +15,8 @@ Assumptions:
 - Carry = coupon income − financing cost, per month.
 - Financing at the 3-month T-bill rate (`DTB3`), as a proxy for the repo rate. `DTB3` is quoted on a discount basis, slightly below a bond-equivalent yield.
 - Carry and roll use yields at the start of each month (`.shift(1)`).
+
+
+## Completed analysis
+
+The additional analysis is appended to `HW2_T5.ipynb`; the original code cells are unchanged. Use the added section for the final results. See [task5_notes.md](task5_notes.md) for its full assumptions and run instructions, and [task5_report.md](task5_report.md) for the written report.
