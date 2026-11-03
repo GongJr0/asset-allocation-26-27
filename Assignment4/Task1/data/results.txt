@@ -1,0 +1,12 @@
+=== Inflation betas, 2006-03 to 2026-09, N = 245 ===
+Monthly return regressed on monthly CPI inflation; beta = 1 means full hedge.
+'surprise' = inflation minus real-time AR(1) forecast (120-month window).
+
+                  rank   beta  se (NW)      t      p     R2  beta surprise  se surprise  t surprise  R2 surprise  real return (ann.)  real vol (ann.)
+Commodities TR       1  7.162    1.176  6.091  0.000  0.171          8.285        1.651       5.017        0.178               0.001            0.184
+US equities          2  1.003    1.295  0.775  0.438  0.005          1.386        1.480       0.936        0.008               0.082            0.151
+REITs                3  0.428    2.594  0.165  0.869  0.000          1.226        3.229       0.380        0.003               0.033            0.219
+Gold                 4 -0.296    0.947 -0.313  0.754  0.000          0.574        1.121       0.512        0.001               0.066            0.175
+Treasuries 7-10y     5 -1.907    0.413 -4.621  0.000  0.099         -1.986        0.473      -4.195        0.083               0.004            0.070
+
+Inflation: mean 2.56% p.a., monthly std 0.31%; surprise monthly std 0.28%
