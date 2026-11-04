@@ -10,3 +10,45 @@ Gold                 4 -0.296    0.947 -0.313  0.754  0.000          0.574      
 Treasuries 7-10y     5 -1.907    0.413 -4.621  0.000  0.099         -1.986        0.473      -4.195        0.083               0.004            0.070
 
 Inflation: mean 2.56% p.a., monthly std 0.31%; surprise monthly std 0.28%
+
+=== Conditional on inflation regime: high = CPI YoY > 3% (75 of 245 months) ===
+High-inflation episodes: 2006-03–2006-08, 2007-10–2008-10, 2011-04–2012-01, 2021-04–2024-05, 2025-09–2025-09, 2026-03–2026-09
+'High - Normal' row: difference in mean real return, NW t-stat of the difference
+
+                                 months  mean real return (ann.)  real vol (ann.)  beta in state  se (NW)      t
+US equities      High inflation    75.0                   -0.017            0.176          1.427    2.736  0.522
+                 Normal           170.0                    0.138            0.137          1.933    1.005  1.923
+                 High - Normal                            -0.155                                          -2.204
+Treasuries 7-10y High inflation    75.0                   -0.030            0.077         -0.511    0.571 -0.895
+                 Normal           170.0                    0.023            0.067         -3.002    0.540 -5.564
+                 High - Normal                            -0.053                                          -1.287
+Commodities TR   High inflation    75.0                    0.070            0.220          8.893    3.288  2.705
+                 Normal           170.0                   -0.005            0.166          6.812    1.250  5.452
+                 High - Normal                             0.075                                           0.752
+Gold             High inflation    75.0                    0.046            0.208          3.089    2.743  1.126
+                 Normal           170.0                    0.094            0.159         -2.347    1.402 -1.674
+                 High - Normal                            -0.048                                          -0.521
+REITs            High inflation    75.0                   -0.067            0.239          2.351    4.464  0.527
+                 Normal           170.0                    0.112            0.208          0.471    2.459  0.192
+                 High - Normal                            -0.179                                          -2.359
+
+=== Conditional on inflation regime: high = CPI YoY in top quintile (49 of 245 months) ===
+High-inflation episodes: 2006-05–2006-08, 2007-11–2008-10, 2011-08–2011-09, 2021-04–2023-05, 2023-08–2023-09, 2026-04–2026-05, 2026-09–2026-09
+'High - Normal' row: difference in mean real return, NW t-stat of the difference
+
+                                 months  mean real return (ann.)  real vol (ann.)  beta in state  se (NW)      t
+US equities      High inflation    49.0                   -0.136            0.188          3.891    3.281  1.186
+                 Normal           196.0                    0.147            0.136          1.657    1.004  1.651
+                 High - Normal                            -0.283                                          -2.905
+Treasuries 7-10y High inflation    49.0                   -0.050            0.081         -0.289    0.543 -0.532
+                 Normal           196.0                    0.020            0.067         -2.803    0.531 -5.280
+                 High - Normal                            -0.070                                          -1.478
+Commodities TR   High inflation    49.0                   -0.024            0.233          9.872    4.186  2.358
+                 Normal           196.0                    0.029            0.170          7.795    1.387  5.620
+                 High - Normal                            -0.052                                          -0.370
+Gold             High inflation    49.0                   -0.078            0.188          3.988    2.969  1.343
+                 Normal           196.0                    0.119            0.171         -1.107    1.680 -0.659
+                 High - Normal                            -0.197                                          -2.087
+REITs            High inflation    49.0                   -0.203            0.254          6.463    5.182  1.247
+                 Normal           196.0                    0.122            0.206         -0.112    2.448 -0.046
+                 High - Normal                            -0.325                                          -2.866
